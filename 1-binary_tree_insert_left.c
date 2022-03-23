@@ -14,7 +14,6 @@ node->parent = parent;
 node->n = value;
 node->left = NULL;
 node->right = NULL;
-return (node);
 if (parent == NULL)
 	return (NULL);
 if (parent->left != NULL)
