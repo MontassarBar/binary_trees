@@ -12,6 +12,8 @@ if (node == NULL)
 	return (NULL);
 if (parent == NULL)
 	return (NULL);
+if (node != NULL)
+{
 node->parent = parent;
 node->n = value;
 node->left = NULL;
@@ -23,5 +25,6 @@ if (parent->left != NULL)
 	parent->left = node;
 }
 parent->left = node;
+}
 return (node);
 }
