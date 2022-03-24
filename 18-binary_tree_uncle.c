@@ -15,14 +15,14 @@ if (grand_father == NULL)
 	return (NULL);
 if (grand_father->left == NULL)
 	return (NULL);
+if (grand_father->right == NULL)
+	return (NULL);
 if (node == grand_father->left->left || node == grand_father->left->right)
 {
 	if (grand_father->right == NULL)
 		return (NULL);
 	uncle = grand_father->right;
 }
-if (grand_father->right == NULL)
-	return (NULL);
 else
 {
 	if (grand_father->left == NULL)
