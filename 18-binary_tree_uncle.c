@@ -13,11 +13,7 @@ if (node == NULL)
 grand_father = node->parent->parent;
 if (grand_father == NULL)
 	return (NULL);
-if (grand_father->left == NULL)
-	return (NULL);
-if (grand_father->right == NULL)
-	return (NULL);
-if (grand_father->right == NULL)
+if (node->parent == NULL)
 	return (NULL);
 if (node == grand_father->left->left || node == grand_father->left->right)
 {
@@ -25,8 +21,6 @@ if (node == grand_father->left->left || node == grand_father->left->right)
 }
 else
 {
-	if (grand_father->left == NULL)
-		return (NULL);
 	uncle = grand_father->left;
 }
 return (uncle);
