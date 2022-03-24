@@ -10,10 +10,10 @@ binary_tree_t *grand_father;
 binary_tree_t *uncle;
 if (node == NULL)
 	return (NULL);
+if (node->parent == NULL)
+	return (NULL);
 grand_father = node->parent->parent;
 if (grand_father == NULL)
-	return (NULL);
-if (node->parent == NULL)
 	return (NULL);
 if (node == grand_father->left->left || node == grand_father->left->right)
 {
