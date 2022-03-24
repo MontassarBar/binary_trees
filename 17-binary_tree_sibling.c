@@ -6,10 +6,10 @@
  */
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
-if (node == NULL)
-	return (NULL);
 binary_tree_t *parent;
 binary_tree_t *sibling;
+if (node == NULL)
+	return (NULL);
 parent = node->parent;
 if (parent == NULL)
 	return (NULL);
